@@ -1,0 +1,542 @@
+*{
+  box-sizing: border-box;  /*Border-Box*/
+  margin:0;
+  padding:0;
+  box-shadow: none;
+}
+
+h1 , h3{
+  font-weight: lighter;
+}
+
+.withTheHelpOfMe {
+  width:300px;
+  height:auto;
+  cursor: pointer;
+
+}
+
+.makeMeBlue{
+  width:150px;
+  height:auto;
+}
+
+.withTheHelpOfMe:hover .makeMeBlue{
+  color:#4A2849;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+/*CSS for page header*/
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #0D0917; /*neon*/
+  position: relative;
+  border-bottom:2px dashed #C3C2C0;
+}
+  /*CSS associated with My Name*/
+#pageHeader {
+  width:100%;
+  height:100px;
+  padding-top: 30px;
+  padding-left: 50px;
+  color: rgb(255,255,255); /*white*/
+  font-size: 25px;
+  font-family: monospace;
+}
+  /*End of CSS associated with My Name*/
+
+  /*CSS associated with My Role*/
+#sideHeader {
+  width:400px;
+  height:50px;
+  text-align:center;
+  background-color: #4A2849;   /*egg-plant*/
+  border: 1px solid #4A2849;  /*egg-plant*/
+  border-radius: 25px;
+  padding-top: 15px;
+  margin-right: 25px;
+  color: rgb(255,255,255);  /*white*/
+  font-family: monospace;
+  position: absolute;
+  bottom:10px;
+  right:0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#sideHeader:hover{
+  transform: rotateY(360deg);
+  -webkit-transform:rotateX(360deg);
+  -moz-transform:rotateX(360deg);
+  -o-transform:rotateX(360deg);
+}
+  /*End of CSS associated with My Role*/
+/*End of CSS for page header*/
+
+/*CSS for page content*/
+#content {
+  widht: 100%;
+  height:1400px;
+  background-color: white; /*Screen(color)*/
+}
+
+#welcome {
+  width:100%;
+  height:700px;
+  padding-top:170px;
+  text-align: center;
+  background-image: url(myimages/welcome.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#welcomeMyImage {
+  width:186px;
+  height: 200px;
+  display: inline-block;
+}
+
+#welcomeWelcomePara {
+  display: inline-block;
+  text-align: left;
+  width:830px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 30px;
+}
+
+#mainContent {
+  width:100%;
+  height:700px;
+  position: relative;
+  background-image: url(myimages/MainArt.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  /*background-image: url(myimages/Wood.png);*/
+}
+
+.mainContentSubContainer {
+  float: left;
+  width: 20%;
+  height:200px;
+  border-radius: 5px;
+  /* background-color: white;
+  box-shadow: 0px 2px 2px 2px black;*/
+  text-align: center;
+  cursor: pointer;
+  color: rgb(33, 95, 132);
+}
+
+.mainContentSubContainer:hover {
+  background-color: rgba(29, 59, 70, 0.2);
+  font-weight: bold;
+}
+
+.pos1 {
+  margin-left: 20%;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+.pos2 {
+  margin-left: 20%;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+.pos3 {
+  clear:left;
+  margin-left: 20%;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+.pos4 {
+  margin-left: 20%;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+#openWindow {
+  width:60%;
+  margin-left: 20%;
+  height:600px;
+  background-color: white;
+  position: absolute;
+  top:50px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+.containerTitle{
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.containerTitleSchools {
+  color: red;
+}
+
+.containerTitleCollege {
+  color: white;
+}
+
+.containerTitleOnline {
+  color: black;
+}
+
+.containerTitleSkills {
+  color: yellow;
+}
+
+#backButton {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255,0,0,0.5);
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.containerInContainer{
+  width:80%;
+  height:100px;
+  margin-left: 10%;
+  margin-top: 10px;
+  padding-left: 100px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.containerInContainerSchool {
+
+}
+
+.containerInContainerCollege {
+  height: 120px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.containerInContainerOnline {
+  height: 140px;
+  background-color: rgba(255,250,205,0.5);
+  margin-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.containerInContainerSkills{
+  height: 20px;
+  background-color: rgba(211,211,211,0.5);
+  margin-bottom: 10px;
+}
+
+.nameTitleContainer {
+
+}
+
+.nameTitleContainerSchools {
+  color: white;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.nameTitleContainerCollege {
+  color: white;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.nameTitleContainerOnline{
+  color : black;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.nameTitleContainerSkills {
+  color : black;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+
+.dateContainer {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  color: yellowgreen;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.locationContainer {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.degreeContainer {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.onlineSchoolContainer{
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.linkContainer {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  color: rgba(148, 0, 211, 0.6);;
+  font-size: 20px;
+  padding-top: 15px;
+}
+/*End of CSS for page content*/
+
+/*CSS for page footer*/
+#pageFooter {
+  width:100%;
+  height: 100px;
+  border-top: 2px dashed #C3C2C0;
+  text-align: center;
+  background-color: #0D0917;  /*neon*/
+  color: white;
+  padding-top: 10px;
+}
+  /*CSS associated with my contact information*/
+#contactInformation {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+  }
+
+.contactInformationSubHeadings {
+  width:auto;
+  heigth:20px;
+  color: grey;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contactInformationSubHeadingsValue{
+  width:auto;
+  height:20px;
+  color: white;
+  /*padding-right: 15px;*/
+
+}
+
+.border {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.last {
+  margin-right: 0;
+}
+
+  /*End of CSS associated with my contact information*/
+/*End of CSS for page footer*/
+
+
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1560px)
+{
+  .border {
+    margin-right: 120px;
+  }
+  .secondLast {
+    margin-right: 0;
+  }
+  .last {
+    margin-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1330px)
+{
+  .border {
+    margin-right: 200px;
+  }
+  .secondLast {
+    margin-right: 200px;
+  }
+  .thirdLast {
+    margin-right: 0;
+  }
+  .last {
+    margin-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1200px)
+{
+  .border {
+    margin-right: 150px;
+  }
+  .secondLast {
+    margin-right: 150px;
+  }
+  .thirdLast {
+    margin-right: 0;
+  }
+  .last {
+    margin-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1110px)
+{
+  .border {
+    margin-right: 100px;
+  }
+  .secondLast {
+    margin-right: 100px;
+  }
+  .thirdLast {
+    margin-right: 0;
+  }
+  .last {
+    margin-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1090px)
+{
+  #welcome {
+    padding-top: 120px;
+  }
+  #welcomeWelcomePara {
+    margin-left: 100px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 990px)
+{
+  .border {
+    margin-right: 50px;
+  }
+  .secondLast {
+    margin-right: 50px;
+  }
+  .thirdLast {
+    margin-right: 0;
+  }
+  .last {
+    margin-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+  .border {
+    margin-right: 10px;
+    border-right: 1px solid grey;
+    padding-right: 11px;
+  }
+  .secondLast {
+    margin-right: 10px;
+  }
+  .thirdLast {
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+  .last {
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+  #pageFooter {
+    height: 110px;
+  }
+}
